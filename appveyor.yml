@@ -11,5 +11,5 @@ platform: Any CPU
 configuration: Release
 
 build:
-    project: NanoDiCs.sln
+    project: .\src\NanoDiCs.sln
     verbosity: minimal
