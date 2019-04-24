@@ -4,6 +4,7 @@ branches:
     only:
     - master
 
+## This is vital for builds to pass. DO NOT CHANGE
 before_build:
     - nuget restore .\src\NanoDiCs.sln
     
