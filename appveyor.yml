@@ -5,7 +5,7 @@ branches:
     - master
 
 before_build:
-    - nuget restore .\ContainerTests\packages.config -PackagesDirectory ..\packages\
+    - nuget restore .\src\NanoDiCs.sln
     
 platform: Any CPU
 configuration: Release
