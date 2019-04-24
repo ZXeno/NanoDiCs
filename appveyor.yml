@@ -4,4 +4,5 @@ before_build:
 - nuget restore
 
 build:
-project: NanoDiCs.sln
+    project: NanoDiCs.sln
+    verbosity: minimal
