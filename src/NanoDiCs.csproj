@@ -40,5 +40,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResolvedTypeWithLifeTimeOptions.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="NanoDiCs.nuspec" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
