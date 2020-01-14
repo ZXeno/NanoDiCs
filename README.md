@@ -4,8 +4,8 @@ Nano Dependency Injection for C# (.Net 4.7.2), my personal Dependency Injection 
 [![Build status](https://ci.appveyor.com/api/projects/status/qv58fqv2x2vmbvt6?svg=true)](https://ci.appveyor.com/project/ZXeno/nanodics)
 
 ### Objective
-The objective of this project was two-fold: to learn how DI worked and to use it on a regular basis. This library is used in nearly every project I initiate, whether it is here on github or not. This repo is an abstraction of that code into a buildable library and to keep that code available for others if they decide they want to use or contribute to it.
+The objective of this project was two-fold: to learn how DI worked and to use it on a regular basis. This library is used in nearly every personal project I initiate, whether it is here on github or not. This repo is an abstraction of that code into a buildable library and to keep that code available for others if they decide they want to use or contribute to it.
 
-### This project is no deprecated and no longer actively developed!
-With the rise in prominence of .Net Core 2.2+, .Net 4.8.x being the final version of the older .Net framework, and .Net 5 coming in 2020, I have moved on to develping in the .Net Core ecosystem. This DI library was also superceded by the Microsoft Dependency Injection framework built into the .Net Core 3.x library. 
+### Reinstated!
+This project was previously deprecated, but has found new lease in a couple of recent recent projects and tools. I've updated the project files to compile against .Net Standard 2.1 and still retain the .Net Framework 4.7.2+ compatibility. As of the update of this readme, .Net Standard 2.1 compatibility is available.
 

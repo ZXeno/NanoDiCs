@@ -49,7 +49,7 @@ public class ContainerTests
         DependencyContainer container = this.GetNewContainer();
 
         container.Register<IMockInterfaceObject, MockObject>();
-        
+
         IMockInterfaceObject resolvedObject = container.Resolve<IMockInterfaceObject>();
 
         Assert.IsNotNull(resolvedObject);
@@ -87,7 +87,7 @@ public class ContainerTests
         DependencyContainer container = this.GetNewContainer();
 
         container.Register<IMockInterfaceObject, MockObject>();
-        
+
         Assert.IsTrue(container.IsRegistered<IMockInterfaceObject>());
 
         container.UnResgister<IMockInterfaceObject>();
@@ -134,10 +134,10 @@ public class ContainerTests
         container.Register<IMockInterfaceObject, MockObject>(LifeTimeOptions.ContainerControlled);
 
         IMockInterfaceObject mockObject = container.Resolve<IMockInterfaceObject>();
-        
+
         Guid mockObjectId = mockObject.ObjectId;
         string mockObjectName = mockObject.Name;
-        
+
         mockObject = null;
         GC.Collect();
         Thread.Sleep(1000);

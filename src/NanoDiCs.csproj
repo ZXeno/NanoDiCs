@@ -1,47 +1,20 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{538472D9-4A13-4B61-AE1B-4FBCC746EB74}</ProjectGuid>
+    <TargetFrameworks>netstandard2.1;net472</TargetFrameworks>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NanoDiCs</RootNamespace>
-    <AssemblyName>NanoDiCs</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<PackageVersion>1.1.0</PackageVersion>
+	<Copyright>Copyright © Jonathan Cain under the MIT license.</Copyright>
+	<Description>Lightweight, stripped-down dependency-injection library.</Description>
+    <RepositoryUrl>http://github.com/zxeno/nanodics</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageTags />
+    <PackageReleaseNotes>Update to include compatibility with .Net Standard 1+/2.1, retain .Net Framework 4.7.2 and later compatibility.</PackageReleaseNotes>
+    <Authors>Jonathan "ZXeno" Cain</Authors>
+    <PackageProjectUrl>http://github.com/zxeno/nanodics</PackageProjectUrl>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="DependencyContainer.cs" />
-    <Compile Include="LifeTimeOptions.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ResolvedTypeWithLifeTimeOptions.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="NanoDiCs.nuspec" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
